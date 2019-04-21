@@ -1,0 +1,287 @@
+import { Head, Notes } from '@mdx-deck/components'
+import { Invert } from '@mdx-deck/layouts'
+import { Avatar } from 'jxnblk'
+import Frame from './frame'
+import {
+  ThemeTweet,
+  BlocksTweet,
+} from './tweets'
+
+export { theme } from './theme'
+
+<Head>
+  <title>Interoperability | Jxnblk</title>
+  <meta />
+</Head>
+
+# Interoperability
+
+---
+
+## Brent Jackson
+
+Software developer at Gatsby
+
+---
+
+<Avatar size={128} />
+
+## @jxnblk
+
+<Notes>
+
+- Colorable
+- Rebass
+- Styled System
+- MDX Deck
+
+</Notes>
+
+---
+
+- Basscss
+- CSS Stats
+- Rebass
+- Styled System
+
+<Notes>
+
+The result of working on style guides, pattern libraries, and design systems
+at practically every job I've ever had.
+
+</Notes>
+
+---
+
+## Basscss & Tachyons
+
+<Notes>
+
+- Came from working together on similar problems
+- Moved to NYC
+- Should have combined forces
+
+</Notes>
+
+---
+
+- Buzzfeed Solid
+- Etsy
+- GitHub Primer
+- Bootstrap
+- Tailwind CSS
+
+<Notes>
+
+- Similar APIs
+- Different naming conventions
+
+</Notes>
+
+---
+
+## Migration is possible, but not easy
+
+---
+
+## Learn from the past
+
+---
+
+<ThemeTweet />
+
+---
+
+## Design Tokens
+
+<Notes>
+
+- Jina Anne's concept from work at Salesforce
+- Different teams, different implementations, different libraries
+- Different naming conventions
+
+</Notes>
+
+---
+
+## Theme Specification
+
+---
+
+<img
+  src='https://system-ui.com/icon.png'
+  alt='System UI'
+  width='320'
+  height='320'
+  style={{
+    width: '8em',
+  }}
+/>
+
+System UI
+
+https://system-ui.com
+
+<Notes>
+
+- Decoupled from implementations
+- React-focused but language agnostic
+- Yes, like the font
+
+</Notes>
+
+---
+
+<Frame src='https://system-ui.com/theme' />
+
+<Notes>
+
+- Interest from:
+- Modulz
+- Smooth UI
+- Material UI
+
+</Notes>
+
+---
+
+## Scales
+
+- `fontSizes`
+- `colors`
+- `space`
+- `sizes`
+
+<Notes>
+
+- Provides a standard for naming
+- Doesn't tell you *what* to put in a scale
+
+</Notes>
+
+---
+
+## It "just works"
+
+<Notes>
+
+- What if:
+- Different UI component libraries could be swapped
+- Maintain your brand's styles
+- Off-the-shelf UI doesn't require much hacking to make it match your app
+- Design and development tools speak the same language
+
+</Notes>
+
+---
+
+<BlocksTweet />
+
+<Notes>
+
+- John's been working on a rich text editor for MDX
+- Called Blocks
+- MDX is markdown with support for embedded React components
+- In just a few minutes he added UI to change the theme in this doc
+
+</Notes>
+
+---
+
+```jsx
+<ThemeProvider theme={theme}>
+  <EditProvider>
+    {props.children}
+    <FieldSet name='colors' />
+    <FieldSet name='fontSizes' />
+  </EditProvider>
+</ThemeProvider>
+```
+
+<Notes>
+
+- Styled System Edit
+- Wasn't really built for the MDX Blocks editor
+- Uses the same theme spec
+- Dev tool to add to any site
+
+</Notes>
+
+---
+
+## Gatsby Themes
+
+<Notes>
+
+- Modern take on WP themes
+- Composable
+- Can turn an entire site into a "theme"
+- Data-driven
+- Shadowing
+- Theming
+
+</Notes>
+
+---
+
+## Composition
+
+<Notes>
+
+- Blog
+- Portfolio
+- Documentation
+- E-commerce
+
+</Notes>
+
+---
+
+## Theme UI
+
+<Notes>
+
+- For developing Gatsby themes
+- Themeable
+- Isolated Styles
+- Blog styles don't stomp portfolio styles
+
+</Notes>
+
+---
+
+[jxnblk.com/blog/interoperability](https://jxnblk.com/blog/interoperability/)
+
+<Notes>
+
+- If this idea is interesting to you,
+- I wrote about this more in depth on my blog
+
+</Notes>
+
+---
+
+<img
+  src='https://github.com/jxnblk/mdx-deck/raw/master/docs/ace.png'
+  width='128'
+  height='128'
+/>
+
+## MDX Deck
+
+<Notes>
+
+- Shameless plug: this presentation was created with MDX Deck
+- MDX lets you use React in markdown
+- SVGs, Tweet embeds, etc.
+
+</Notes>
+
+---
+
+<Avatar size={128} />
+
+# Thanks!
+
+@jxnblk
+

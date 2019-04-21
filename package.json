@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "interoperability",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "keywords": [],
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jxnblk": "^1.4.1",
+    "mdx-deck": "^2.3.0"
+  }
+}
