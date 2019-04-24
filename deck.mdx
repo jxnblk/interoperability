@@ -84,6 +84,7 @@ This is our cat Leia
 
 <Notes>
 
+- Others adopted Functional CSS approach
 - Same concept
 - Similar APIs
 - Different naming conventions
@@ -160,6 +161,7 @@ https://styled-system.com
 - Jina Anne's concept from work at Salesforce
 - Different teams, different implementations, different libraries
 - Different naming conventions
+- Design tokens from one system are not likely to work in another system
 
 </Notes>
 
@@ -200,6 +202,8 @@ https://system-ui.com
 ---
 
 <Frame src='https://system-ui.com/theme' />
+
+https://system-ui.com/theme
 
 <Notes>
 
@@ -257,6 +261,7 @@ https://system-ui.com
 ---
 
 ```jsx
+// @styled-system/edit
 <ThemeProvider theme={theme}>
   <EditProvider>
     {props.children}
@@ -326,6 +331,8 @@ https://system-ui.com
 <Notes>
 
 - Moral of this story
+- Don't overthink it
+- Just call it what everyone else does
 
 </Notes>
 
