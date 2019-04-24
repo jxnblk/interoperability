@@ -12,7 +12,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@styled-system/edit": "0.0.4",
+    "@styled-system/edit": "0.0.5",
     "jxnblk": "^1.4.1",
     "mdx-deck": "^2.3.0"
   }

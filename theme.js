@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { jsx } from '@emotion/core'
 import dark from '@mdx-deck/themes/dark'
-import { EditProvider, FieldSet } from '@styled-system/edit'
+import { EditProvider, FieldSet, ResetButton } from '@styled-system/edit'
 
 console.log(dark)
 
@@ -22,7 +22,13 @@ const Editor = props => {
 
   if (!open) {
     return (
-      <Fixed>
+      <Fixed
+        css={{
+          opacity: 0,
+          '&:hover': {
+            opacity: 1,
+          }
+        }}>
         <button
           onClick={e => {
             setOpen(!open)
@@ -38,6 +44,7 @@ const Editor = props => {
         padding: 8,
         backgroundColor: 'white',
       }}>
+      <ResetButton>Reset</ResetButton>
       <button
         onClick={e => {
           setOpen(!open)
