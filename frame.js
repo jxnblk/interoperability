@@ -8,6 +8,7 @@ export default ({ src }) =>
     frameBorder='0'
     allowFullScreen
     style={{
+      backgroundColor: 'white',
       borderRadius: 8,
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.125), 0 0 8px 512px rgba(0, 0, 0, 0.0625)'
     }}

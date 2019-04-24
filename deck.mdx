@@ -44,6 +44,10 @@ Software developer at Gatsby
   size='contain'
 />
 
+<Notes>
+This is our cat Leia
+</Notes>
+
 ---
 
 - Basscss
@@ -53,8 +57,8 @@ Software developer at Gatsby
 
 <Notes>
 
-The result of working on style guides, pattern libraries, and design systems
-at practically every job I've ever had.
+- If you work with React or design systems you may have seen some of these
+- The result of working on style guides, pattern libraries, and design systems at practically every job I've ever had.
 
 </Notes>
 
@@ -73,13 +77,14 @@ at practically every job I've ever had.
 ---
 
 - Buzzfeed Solid
-- Etsy
+- Etsy CSS
 - GitHub Primer
 - Bootstrap
 - Tailwind CSS
 
 <Notes>
 
+- Same concept
 - Similar APIs
 - Different naming conventions
 
@@ -89,9 +94,58 @@ at practically every job I've ever had.
 
 ## Migration is possible, but not easy
 
+<Notes>
+
+- Start with one library
+- Migrating to another
+- Some amount of lock-in
+- Interoperability probably wasn't a primary concern for these libraries
+
+</Notes>
+
 ---
 
 ## Learn from the past
+
+---
+
+<img
+  src='https://styled-system.com/logo.svg'
+  width={256}
+  height={256}
+/>
+
+## Styled System
+
+https://styled-system.com
+
+<Notes>
+
+- Extraction of the API from Rebass
+- Meant for building custom component libraries
+- Standards for prop naming conventions
+
+</Notes>
+
+---
+
+```jsx
+<Box
+  color='white'
+  bg='primary'
+  p={4}
+  width={[ '100%', '50%' ]}
+/>
+```
+
+<Notes>
+
+- Component-based CSS Abstraction
+- Lets you style components with props
+- Pulls values from a core theme object (e.g. design tokens)
+- Handles mobile-first responsive styles
+
+</Notes>
 
 ---
 
@@ -113,6 +167,12 @@ at practically every job I've ever had.
 
 ## Theme Specification
 
+<Notes>
+
+- This is where the theme specification comes in
+
+</Notes>
+
 ---
 
 <img
@@ -133,7 +193,7 @@ https://system-ui.com
 
 - Decoupled from implementations
 - React-focused but language agnostic
-- Yes, like the font
+- "System UI" Yes, like the font
 
 </Notes>
 
@@ -143,6 +203,7 @@ https://system-ui.com
 
 <Notes>
 
+- Based on approaches from Styled System
 - Interest from:
 - Modulz
 - Smooth UI
@@ -222,7 +283,7 @@ https://system-ui.com
 
 - Modern take on WP themes
 - Composable
-- Can turn an entire site into a "theme"
+- Any Gatsby site can be turned into a "theme"
 - Data-driven
 - Shadowing
 - Theming
@@ -239,12 +300,13 @@ https://system-ui.com
 - Portfolio
 - Documentation
 - E-commerce
+- Ecosystem of themes
 
 </Notes>
 
 ---
 
-## Theme UI
+## Theme UI (WIP)
 
 <Notes>
 
@@ -291,4 +353,12 @@ https://system-ui.com
 # Thanks!
 
 @jxnblk
+
+---
+
+### Resources
+
+- https://styled-system.com
+- https://system-ui.com
+- https://mdxjs.com
 
